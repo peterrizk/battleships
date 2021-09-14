@@ -5,10 +5,14 @@ This code is designed to record the state of a battleship board with the followi
 * Take an “attack” at a given position, and report back whether the attack
 resulted in a hit or a miss.
 
-# Assumptions
+# Running locally
+* open in vscode
+* hit f5 to load swagger
+
+# Deployment Assumptions
 * using vscode
-* azure app services installed
-* azure account owned
+* the vscode extension - azure app services is installed
+* you have an azure account
 
 # Deployment Azure 
 ```
