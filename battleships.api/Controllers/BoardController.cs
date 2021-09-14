@@ -2,6 +2,8 @@
 using battleships.application;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+using System.Net.Http;
 
 namespace battleships.api.Controllers
 {
@@ -23,9 +25,11 @@ namespace battleships.api.Controllers
         /// <response code="200">Success</response>
         /// <response code="500">Server Error</response>
         [HttpGet("[action]")]
-        public async Task<ActionResult> Create()
+        public async Task<IActionResult> Create()
         {
-            return await Task.FromResult(new OkResult());
+            var str = JsonConvert.SerializeObject(new bool?[10,10]);
+
+            return await Task.FromResult(Ok(str));
         }
 
         /// <summary>
