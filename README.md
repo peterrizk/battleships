@@ -24,3 +24,6 @@ dotnet publish -c Release -o ./publish
 
 # Hosted Url
 https://pr-battleships.azurewebsites.net/swagger/index.html
+
+# Possible concern
+* returning the board after adding a ship may need to be hidden from the user playing the game - Putting it in the api response may or may not be bad but it helps testing validation. One option could be to base64 the board in the response.
