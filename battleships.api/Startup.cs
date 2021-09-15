@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Reflection;
+using battleships.api.Middleware;
 using battleships.application;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -54,6 +55,8 @@ namespace battleships.api
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseMiddleware<ControllerExceptionHandlerMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {
