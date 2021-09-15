@@ -19,6 +19,7 @@ resulted in a hit or a miss.
 cd battleships.api
 dotnet publish -c Release -o ./publish
 #right click on publish -> click deploy to web app -> follow the prompts
+#visit the hosted url below
 #influences: https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vscode?view=aspnetcore-5.0
 ```
 
